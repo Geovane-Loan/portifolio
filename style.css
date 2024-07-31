@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 230px;
+    background-color: #262626;
+    z-index: 1;
+    box-shadow: 0 5px 20px 0 #5852F2;
+}
+
+.logo {
+    width: 110px;
+    height: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    font-size: 2.3rem;
+}
+
+#logo-icon {
+    width: 40%;
+    height: auto;
+    cursor: pointer;
+    color: #4E4BBF;
+}
+
+#logo-icon:hover {
+    color: #F2F2F2;
+    filter: drop-shadow(0 0 2px rgba(87, 82, 242, 1))
+}
+
+.logo-span {
+    font-family: "Silkscreen", sans-serif;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.logo-span:hover {
+    color: #4E4BBF;
+    text-shadow: #F2F2F2 -1px 2px 2px;
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    font-size: 1.2rem;
+    color: #F2F2F2;
+}
+
+li:hover {
+    color: #5852F2;
+    cursor: pointer;
+    text-shadow: #4E4BBF 0 0 10px;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #F2F2F2;
+}
+
+.home-container {
+    background-color: #262626;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.presentation-container {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 130px;
+    padding: 20px 10px;
+    color: #F2F2F2;
+}
+
+.presentation-container h3 {
+    letter-spacing: 14px;
+    font-size: 1rem;
+    font-family: 'Libre Bodoni', sans-serif;
+}
+
+.presentation-container h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.presentation-container span {
+    font-family: 'Libre Bodoni', sans-serif;
+    color: #5752D9;
+}
+
+.destaks-container {
+    background-color: #262626;
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    padding: 20px;
+}
+
+.destaks-content {
+    height: 98%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-1 {
+    width: 85%;
+    height: 85%;
+    /* background-image: url(./imgs/print-projetos/Untitled.png);
+    background-position: 50% 50%;
+    background-size: cover; */
+    background-color: #262626;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 20px 1px #4E4BBF;
+    transition: 0.7s;
+}
+
+.img-card-1 {
+    width: 70%;
+    height: 75%;
+    background-image: url(./imgs/print-projetos/Justly.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 0 20px 1px #4E4BBF;
+    border-radius: 5%;
+    margin: 0 0 0 60px;
+    padding: 10px;
+}
+
+.card-1:hover {
+    transform: scale(1.1);
+}
+
+.superior {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+}
+
+.elemento-1 {
+    width: 90px;
+    height: 30px;
+    background-color: #262626;
+    box-shadow: 0 0 2px 0 #F2F2F2;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elemento-1 span {
+    color: #F2F2F2;
+}
+
+.elemento-2 {
+    width: 90px;
+    height: 30px;
+    background-color: #262626;
+    box-shadow: 0 0 2px 0 #F2F2F2;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.elemento-2 span {
+    color: #F2F2F2;
+}
+
+.escopo {
+    width: 70%;
+    height: 30px;
+    padding-bottom: 90px;
+}
+
+.escopo h3 {
+    font-size: 1.6rem;
+    color: #F2F2F2;
+}
+.escopo span {
+    font-size: 1rem;
+    font-family: 'Libre Bodoni', sans-serif;
+    color: #F2F2F2;
+}
+
+.card-2 {
+    width: 85%;
+    height: 85%;
+    background-image: url(./imgs/print-projetos/unnamed.gif);
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 0 20px 1px #4E4BBF;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: 0.7s;
+}
+
+.card-2:hover {
+    transform: scale(1.1);
+}
+
+.card-3 {
+    width: 85%;
+    height: 85%;
+    background-image: url(./imgs/print-projetos/unnamed.gif);
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 0 20px 1px #4E4BBF;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: 0.7s;
+}
+
+.card-3:hover {
+    transform: scale(1.1);
+}
+
+.card-4 {
+    width: 85%;
+    height: 85%;
+    background-image: url(./imgs/print-projetos/unnamed.gif);
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 0 20px 1px #4E4BBF;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: 0.7s;
+}
+
+.card-4:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #4E4BBF;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.professional-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.professional-content {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.professional-picture {
+    background-image: url(./imgs/novo_perfil.jpeg);
+    width: 80px;
+    height: 80px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+.professional-picture:hover {
+    box-shadow: 0 0 20px 0 #F2F2F2;
+    transform: scale(1.5);
+}
+
+.name-function h3 {
+    color: #F2F2F2;
+    font-size: 1.3rem;
+}
+
+.name-function span {
+    font-family: 'Libre Bodoni', sans-serif;
+    color: #F2F2F2;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-shadow: #262626 0 0 2px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    width: 60%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: start;
+    font-size: 1.5rem;
+    color: #F2F2F2;
+}
+
+#instagram-icon:hover {
+    color: #e432a9;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px #f2f2f2);
+}
+
+#linkedin-icon:hover {
+    cursor: pointer;
+    color: #0e76a8;
+    filter: drop-shadow(0 0 2px #f2f2f2);
+}
+
+#facebook-icon:hover {
+    cursor: pointer;
+    color: #3b5998;
+    filter: drop-shadow(0 0 2px #f2f2f2);
+}
+
+#github-icon:hover {
+    cursor: pointer;
+    color: #171515;
+    filter: drop-shadow(0 0 2px #f2f2f2);
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.contact-span {
+    color: #F2F2F2;
+    letter-spacing: 3px;
+    font-size: 1.8rem;
+}
+
+.contact-content {
+    width: 90%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-content span {
+    color: #F2F2F2;
+    font-family: 'Libre Bodoni', sans-serif;
+    letter-spacing: 2px;
+}
+
+.contact-content a {
+    color: #F2F2F2;
+    text-decoration: underline;
+}
+
+.contact-container a:hover {
+    color: #262626;
+}
+
+.copyright {
+    background-color: #262626;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.copyright span {
+    color: #F2F2F2;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 1.5rem;
+}
+
+.seta {
+    color: #262626;
+    font-size: 2rem;
+    text-shadow: #F2F2F2 0 0 2px ;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 130px;
+    }
+
+    .presentation-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 835px) {
+    header nav {
+        display: none;
+    }
+}
